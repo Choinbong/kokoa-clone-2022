@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes turningballs {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes growingrod {
+    0% {
+        transform: scaleY(1)
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+    
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+#wrapper {
+    background-color: #6bbcde;
+    height: 70vh;
+    width: 70vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper > div {
+    margin: 50px;
+}
+
+#first {
+    animation: turningballs 1s ease-in-out infinite;
+    transform-origin: 50% 50%;
+    /* animation-delay: 0.4s; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first > div {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #e8f4f4;
+    height: 20px;
+    width: 20px;
+    margin: 20px;
+}
+
+#second > div {
+    display: inline-block;
+    background-color: #e8f4f4;
+    height: 80px;
+    width: 20px;
+    margin: 10px;
+    animation: growingrod 1s ease-in-out infinite
+}
+
+#second > div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#second > div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+#second > div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+#second > div:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+#second > div:nth-child(5) {
+    animation-delay: 0.4s;
+}

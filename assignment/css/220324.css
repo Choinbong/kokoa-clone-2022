@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.status-bar {
+    width: 100%;
+    background-color: #FFCE4B;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 15px 70px 15px;
+}
+
+.status-bar__column {
+    width: 33%;
+}
+
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    color: #594915;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.status-bar__column:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-bar  {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-bar__text {
+    margin: 15px 30px;
+}
+
+.search-bar__text input {
+    border: none;
+    font-size: 18px;
+}
+
+.search-bar__text .fas {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.2);
+}
