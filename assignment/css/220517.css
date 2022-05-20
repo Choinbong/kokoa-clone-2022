@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes dotRotation {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rodAnimation {
+    25% {
+        transform: scaleY(2);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(106, 188, 190);
+    width: 570px;
+    height: 500px;
+}
+
+.wrapper > div:first-child {
+    margin-bottom: 80px;
+}
+
+.box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots {
+    animation: dotRotation 1s ease-in-out infinite;
+}
+
+.dot, .rod {
+    background-color: white;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.rod {
+    width: 15px;
+    height: 60px;
+    margin: 6px;
+    animation: rodAnimation 1s ease-in-out infinite;
+}
+
+.rod:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.rod:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.rod:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.rod:nth-child(5) {
+    animation-delay: 0.4s;
+}
