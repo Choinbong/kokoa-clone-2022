@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
 
 * {
-    border: 1px solid red;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -11,6 +10,10 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+}
+
+.relative {
+    position: relative;
 }
 
 .wrapper {
@@ -23,6 +26,9 @@ body {
     background-color: white;
     border-radius: 30px;
     padding: 15px;
+    border-width: 0px 5px 5px 5px;
+    border-color: rgba(122, 120, 120, 0.219);
+    box-shadow: -0.5px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper > div {
@@ -46,22 +52,23 @@ body {
 
 .singer__pic {
     border-radius: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     width: 95px;
     height: 95px;
+    box-shadow: 0.5px 1px 10px rgb(56, 1, 42);
 }
 
 .singer__name {
     font-size: 27px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .singer__genre {
     font-size: 17px;
     font-weight: 700;
     opacity: 0.6;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .like {
@@ -86,9 +93,15 @@ body {
     color: white;
 }
 
+.like__heart {
+    box-shadow: -0.3px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 .like__heart span {
-    margin-right: 10px;
-    opacity: 0.6;
+    margin-left: 10px;
+    opacity: 0.4;
+    font-size: 17px;
+    font-weight: 800;
 }
 
 .song-list {
@@ -96,6 +109,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 .song-box {
@@ -105,10 +119,13 @@ body {
     width: 100%;
     height: 75px;
     position: relative;
+    box-sizing: border-box;
+    border-radius: 23px;
 }
 
 .song-box:nth-child(2) {
     border-width: 1px 1px 2px 1px;
+    box-shadow: -0.5px 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 .song__jacket {
@@ -137,14 +154,18 @@ body {
 }
 
 .player {
+    position: absolute;
     height: 70px;
     display: flex;
+    bottom: 15px;
     justify-content: space-between;
     align-items: center;
     background-color: #222222;
     padding: 0px 25px;
+    width: 355px;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 35px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .player > .song__singer {
@@ -170,4 +191,73 @@ body {
 
 .player__controller span:nth-child(2) {
     font-size: 23px;
+}
+
+.album {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.album__pic {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 65px;
+    box-shadow: -0.1px 10px 20px rgb(164, 97, 148);
+}
+
+.gauge-controller {
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.gauge-controller > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+.gauge-controller > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gauge-controller input[type="range"] {
+    width: 100%;
+}
+
+.controller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    font-size: 20px;
+}
+
+.controller span {
+    display: inline-block;
+}
+
+.controller span:first-child, .controller span:last-child {
+    opacity: 0.5;
+}
+
+.controller span:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #222222;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0.5px 2px 10px #797979;
 }
