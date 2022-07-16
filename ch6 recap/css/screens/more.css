@@ -1,0 +1,20 @@
+.more-screen .icon-row {
+    opacity: 0.85;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.more-screen .icon-row__icon {
+    margin-top: 35px;
+    width: 25%;
+}
+
+.more-suggestions {
+    margin-top: 50px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+}
+
+.more-suggestions__title {
+    margin-bottom: 30px;
+}

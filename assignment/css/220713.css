@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: white;
+    border: 6px solid #15CAB2;
+    height: 870px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.wrapper>div {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.status-bar {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.status-bar span {
+    font-size: 25px;
+}
+
+.status-bar span:first-child {
+    position: absolute;
+    left: 0;
+}
+
+.status-bar span:last-child {
+    display: inline-block;
+    text-align: center;
+}
+
+.main-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-album__jacket {
+    width: 155px;
+    height: 135px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBD44;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.main-album__singer {
+    margin-left: 20px;
+}
+
+.main-album__singer div:first-child {
+    font-size: 38px;
+}
+
+.main-album__singer div:last-child {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 65px;
+    font-size: 25px;
+    border-bottom-width: 6px;
+    margin-right: 25px;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.button__play {
+    width: 205px;
+    border-radius: 15px;
+}
+
+.button__play span {
+    margin-left: 10px;
+}
+
+.button__heart {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.song-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.song-list__column {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.song-list__column:last-child {
+    margin-bottom: 0;
+}
+
+.song-list__column:first-child>div:first-child {
+    background-color: #F85A2A;
+}
+
+.song-list__column:nth-child(2)>div:first-child {
+    background-color: #FE89BB;
+}
+
+.song-list__column:nth-child(3)>div:first-child {
+    background-color: #164DE5;
+}
+
+.song-list__column:last-child>div:first-child {
+    background-color: #05C6AD;
+}
+
+.song-list__jacket {
+    width: 57px;
+    height: 57px;
+    border: 2px solid black;
+    border-radius: 13px;
+    margin-right: 13px;
+}
+
+.song-list__title {
+    font-size: 20px;
+}
+
+.song-list__singer {
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 500;
+}

@@ -2,7 +2,8 @@
     justify-content: space-between;
 }
 
-.user-component ,.user-component__column:first-child {
+.user-component,
+.user-component__column:first-child {
     display: flex;
     align-items: center;
 }
@@ -12,7 +13,7 @@
 }
 
 .user-component__avatar {
-    width:  70px;
+    width: 70px;
     height: 70px;
     border-radius: 30px;
     margin-right: 20px;
@@ -63,4 +64,10 @@
 .user-component__time {
     margin-bottom: 10px;
     display: block;
+}
+
+.fa-exclamation-circle {
+    display: block;
+    margin-left: 5px;
+    color: #FF7667;
 }
